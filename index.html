@@ -242,37 +242,37 @@
         if(touchStrings.some(i => lockCanvasText.includes(i))) {
           if(isDeviceTouch) {
             if(mobileStrings.some(i => lockCanvasText.includes(i))) {
-              lock(canvas, 1080 / 1920 );
+              lock(canvas, 1920 / 1080 );
             }
           } else {
             if(desktopStrings.some(i => lockCanvasText.includes(i))) {
-              lock(canvas, 1080 / 1920 );
+              lock(canvas, 1920 / 1080 );
             }
           }
         } else if(navigatorStrings.some(i => lockCanvasText.includes(i))) {
           if(isDeviceNavigator) {
             if(mobileStrings.some(i => lockCanvasText.includes(i))) {
-              lock(canvas, 1080 / 1920 );
+              lock(canvas, 1920 / 1080 );
             }
           } else {
             if(desktopStrings.some(i => lockCanvasText.includes(i))) {
-              lock(canvas, 1080 / 1920 );
+              lock(canvas, 1920 / 1080 );
             }
           }
         } else {
           if(isDeviceNavigator) {
             if(mobileStrings.some(i => lockCanvasText.includes(i))) {
-              lock(canvas, 1080 / 1920 );
+              lock(canvas, 1920 / 1080 );
             }
           } else {
             if(desktopStrings.some(i => lockCanvasText.includes(i))) {
-              lock(canvas, 1080 / 1920 );
+              lock(canvas, 1920 / 1080 );
             }
           }
         }
         if(window.innerWidth < window.innerHeight) {
           isPortrait = true;
-          lock(loading, 9/16);
+          lock(loading, 16/9);
           if(loading_bar_style == 0) {
             // По умолчанию
             setLoading("44%", "50%", "30%", "30%", "55%", "50%", "70%", "2%", "#FFF", "#00dc15", "0px 0px 0px 7px rgba(34, 60, 80, 0.2)", "0", "8px 8px 8px 8px", "8px 8px 8px 8px", "linear-gradient(45deg, rgba(0, 0, 0, 0.25) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0.25) 75%, transparent 75%, transparent)", "15px 15px");
