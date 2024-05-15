@@ -226,6 +226,7 @@
                 loading_bar_style = 0;
             }
 
+            ATinstanceEnable(function(){if(document.visibilityState==="visible"){window.ATinstance.SendMessage("AT","PageVisible")}else{window.ATinstance.SendMessage("AT","PageNotVisible")}document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible"){window.ATinstance.SendMessage("AT","PageVisible")}else{window.ATinstance.SendMessage("AT","PageNotVisible")}})});
 
             // Вызываем апдейт при входе на страницу и изменений размеров окна браузера
             function Update() {
